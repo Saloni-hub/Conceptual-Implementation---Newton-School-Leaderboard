@@ -1,13 +1,27 @@
+// const express = require('express')
+// const app = express()
+// const port = 8080
+const {newtonLeadeboardModel} = require('./connector')
+// const onePageStudentCount = 20
+
+
+// // Parse JSON bodies (as sent by API clients)
+// app.use(express.urlencoded({ extended: false }));
+// app.use(express.json());
 const express = require('express')
 const app = express()
+const bodyParser = require("body-parser");
+const posts = require('./data');
 const port = 8080
-const {newtonLeadeboardModel} = require('./connector')
-const onePageStudentCount = 20
-
+app.use(express.urlencoded());
 
 // Parse JSON bodies (as sent by API clients)
-app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
+
+app.use(bodyParser.urlencoded({ extended: false }))
+
+app.use(bodyParser.json())
 
 // your code goes here
 app.get('/topRankings',async(req,res) => {
