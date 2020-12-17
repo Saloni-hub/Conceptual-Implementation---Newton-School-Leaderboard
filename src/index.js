@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 const port = 8080
 const {newtonLeadeboardModel} = require('./connector')
-// const onePageArticleCount = 10
+const onePageStudentCount = 20
 
 
 // Parse JSON bodies (as sent by API clients)
