@@ -1,18 +1,18 @@
 const { Schema } = require('mongoose');
 
 const newtonLeadeboardSchema = new Schema({
-    "name": String,
-    "username": String,
-    "global_rank": Number,
-    "country_rank": Number,
-    "rating": String,
-    "diff": Number,
-    "country_code": String,
-    "country": String,
-    "institution": String,
-    "institution_type": String,
-    "all_rating": String,
-    "user_gender": String
+    "name": Schema.Types.String,
+    "username": Schema.Types.String,
+    "global_rank": Schema.Types.Number,
+    "country_rank": Schema.Types.Number,
+    "rating": Schema.Types.String,
+    "diff": Schema.Types.Number,
+    "country_code": Schema.Types.String,
+    "country": Schema.Types.String,
+    "institution": Schema.Types.String,
+    "institution_type": Schema.Types.String,
+    "all_rating": Schema.Types.String,
+    "user_gender": Schema.Types.String
    
 })
 
