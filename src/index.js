@@ -7,7 +7,7 @@ const posts = require('./data');
 const port = 8080
 app.use(express.urlencoded());
 
-// Parse JSON bodies (as sent by API clients)
+// Parse JSON bodies (as sent by API clients)m
 app.use(express.json());
 
 
