@@ -1,4 +1,3 @@
-
 const {newtonLeadeboardModel} = require('./connector')
 const express = require('express')
 const app = express()
