@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 // your code goes here
-app.get('/topRankings',async(req,res) => {
+app.get('/topRankings', async(req,res) => {
     res.send(await newtonLeadeboardModel.find().skip(sanitize(req.query.offset, 0)).limit(sanitize(req.query.limit , 20)));
 });
 
