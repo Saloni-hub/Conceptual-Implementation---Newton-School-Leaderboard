@@ -1,13 +1,5 @@
-// const express = require('express')
-// const app = express()
-// const port = 8080
+
 const {newtonLeadeboardModel} = require('./connector')
-// const onePageStudentCount = 20
-
-
-// // Parse JSON bodies (as sent by API clients)
-// app.use(express.urlencoded({ extended: false }));
-// app.use(express.json());
 const express = require('express')
 const app = express()
 const bodyParser = require("body-parser");
